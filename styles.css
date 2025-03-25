@@ -1,1 +1,72 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0d97e;
+}
+
+.container {
+  padding: 20px;
+  background: #e0d0d0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 90vw; /* Максимальная ширина 90% от ширины окна */
+  min-width: 300px; /* Минимальная ширина контейнера */
+  margin: 20px auto; /* Центрирование контейнера */
+
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  background-color: #de4dbf;
+}
+
+.product-item.highlight {
+  background-color: #60c0ba; /* Другой фон для каждого второго элемента */
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+}
+
+.info-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.info-button::before {
+  content: '➤'; /* Стрелочка перед кнопкой */
+  position: absolute;
+  left: -90px; /* Смещение влево */
+  color: #0f0e0e;
+}
+
+.info-button:hover {
+  background-color: #0056b3; /* Изменение цвета кнопки при наведении */
+}
